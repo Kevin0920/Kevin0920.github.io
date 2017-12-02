@@ -41,6 +41,25 @@
 	</head>
 
 	<body>
+		<script>
+			function initMap() {
+				// Map options
+				var options = {
+					zoom: 13,
+					center: {lat:37.725685, lng:-122.156830}
+				}
+				// New map
+				var map = new google.maps.Map(document.getElementById('mapCanvas'), options);
+
+				// Add marker
+				var marker = new google.maps.Marker({
+          position: {lat:37.725685, lng:-122.156830},
+          map: map
+        });
+
+			}
+		</script>
+
 		<!-- Preloader -->
 		<div id="tt-preloader">
 			<div id="pre-status">
@@ -987,8 +1006,11 @@
 	  <script src="assets/js/jquery.magnific-popup.min.js"></script>
 	  <!-- <script src="video"></script> -->
 	  <script src="assets/js/jquery.fitvids.js"></script>
-	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmwOOtbODf04PHhK9So0C3079RsySyfMo&callback"></script>
-		<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmwOOtbODf04PHhK9So0C3079RsySyfMo&callback=initMap"type="text/javascript"></script> -->
+		<!-- Google Map API -->
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7vLgWmRsl2Bhb76igwcnJxl9wSbR1qUU&callback=initMap">
+		</script>
+
 	  <script src="assets/js/scripts.js"></script>
 		<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 	</body>
