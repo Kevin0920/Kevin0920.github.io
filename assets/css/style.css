@@ -32,7 +32,12 @@ a:hover {
     text-decoration: none;
 }
 
-
+/* header style */
+#changeHead {
+    font-family: 'Acme', sans-serif;
+    font-size: 32px;
+    text-shadow:0 0 100px #000;
+}
 /* Transition elsements
 -------------------------------------------------------- */
 .navbar a,
@@ -341,11 +346,11 @@ ul.list-check li::before {
   border-right: 1px solid black,
   padding-right: 7px;
   display: inline;
-  margin-top:20%;
+  margin-top: 20%;
 }
 
 .word {
-  font-size: 50px;
+  font-size: 37px;
   color: #fff;
   font-family: 'Acme', sans-serif;
   text-align: center;
